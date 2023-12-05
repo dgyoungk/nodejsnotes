@@ -1,4 +1,4 @@
-<form method="POST" accept="/notes/save">
+<form method="POST" action="/notes/save">
 <input type="hidden" name="docreate" value="<%=docreate ? 'create' : 'update'%>">
 
 <p>Key:
@@ -9,13 +9,9 @@
         <input type="hidden" name="notekey" value="{{#if note }}{{notekey}}{{/if}}">
     {{/if}}
 </p>
-<p>Title:
-    <input type="text" name="title" value="{{#if note}}{{note.title}}{{/if}}">
-</p>
+<p>Title: <input type="text" name="title" value="{{#if note}}{{note.title}}{{/if}}"></p>
 <br>
-<textarea rows="5" cols="40" name="body">
-    {{#if note}}{{note.body}}{{/if}}
-</textarea>
+<textarea rows="5" cols="40" name="body">{{#if note}}{{note.body}}{{/if}}</textarea>
 <br>
 <input type="submit" value="Submit">
 </form>
