@@ -1,4 +1,4 @@
-# Notes App created with NodeJS
+# Notes App from Node.js Web Development 5th edition
 
 
 ### Created with ES6 modules with a bit of CommonJS
